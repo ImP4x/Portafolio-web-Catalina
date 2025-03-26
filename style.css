@@ -1,0 +1,713 @@
+/* Importar una fuente atractiva desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap");
+
+
+/* Estilos generales */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f9f2f2;
+    background-image: url('./img/fondo-3.jpeg');
+    /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    color: #33ffe3;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor principal  sobre mi*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 213, 0.3);
+}
+
+/* Estilo del título */
+.about-container h2 {
+    font-size: 28px;
+    color: #00ffd5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo del párrafo */
+.about-container p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Efecto de entrada con animación */
+.about-container {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Contenedor principal */
+#cata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Texto */
+.text-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #33ffe3;
+}
+
+.text-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #33ffe3;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #aaa;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* Resaltado de texto */
+.highlight {
+    color: #33ffe3;
+}
+
+/* Íconos de redes sociales */
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #33ffe3;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hire,
+.contact {
+    padding: 10px 20px;
+    border: 2px solid #33ffe3;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.hire {
+    background: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 10px #33ffe3;
+}
+
+.hire:hover {
+    background: #33ffe3;
+    color: black;
+}
+
+.contact:hover {
+    background: #33ffe3;
+    color: black;
+}
+
+/* Imagen */
+.image-content {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #33ffe3;
+    box-shadow: 0 0 50px rgba(0, 234, 255, 0.6);
+}
+
+/* Estilos de habilidades */
+/* Contenedor principal */
+.skills-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Título */
+.skills-container h2 {
+    font-size: 28px;
+    color: #00ffd5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de habilidades */
+.skill-card {
+    background: rgba(0, 255, 213, 0.488);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 213, 0.412);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+/* Imágenes dentro de las tarjetas */
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Texto dentro de las tarjetas */
+.skill-card p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Efecto hover */
+.skill-card:hover {
+    transform: scale(1.1);
+    background: rgba(0, 255, 213, 0.4);
+}
+
+
+/* Estilos de proyectos */
+
+.proyectos-container {
+    text-align: center; 
+    width: 100%; 
+}
+
+.proyectos-container h2 {
+    font-size: 28px;
+    color: #33ffe3; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Contenedor principal para alinear los proyectos en columna */
+.projects-container {
+    color: #33ffe3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaciado entre cuadros */
+    padding: 20px;
+}
+
+/* Estilo para cada cuadro de proyecto */
+.project {
+    background: rgba(51, 255, 227, 0.8); /* Color cian con transparencia */
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto al pasar el mouse */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 200, 0.6);
+}
+
+/* Estilo del título */
+.project h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo del párrafo */
+.project p {
+    color: black;
+    font-size: 16px;
+}
+
+/* Estilo del enlace */
+.project a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botones hoja de vida */
+
+/* Contenedor del CV */
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Título */
+.cv-container h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botón de descarga */
+.cv-button {
+    background-color: #00ffd5;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 213, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.cv-button:hover {
+    background-color: #00ccaa;
+    box-shadow: 0px 6px 15px rgba(0, 255, 213, 0.8);
+    transform: scale(1.05);
+}
+
+
+/* Estilo general del footer */
+footer {
+    background-color: #33ffe44e;
+    color: rgb(253, 250, 253);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor de enlaces sociales */
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo de los íconos sociales */
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor por los íconos */
+.social-links a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contacto */
+.contact-form {
+    color: #33ffe3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título del formulario */
+.contact-form h1 {
+    color: #33ffe3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campos del formulario */
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #33ffe3;
+    border-radius: 10px;
+    background-color: black;
+    color: #33ffe3;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Botón del formulario */
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    background-color: #33ffe3;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Estilo del contenedor */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Elementos van desde abajo hacia arriba */
+    align-items: center;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #33ffe3;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido desplegable */
+.whatsapp-content {
+    display: none;
+    /* Comienza oculto */
+    background-color: #33ffe4d3;
+    color: #333;
+    border: 1px solid #050505;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Enlaces dentro del contenido */
+.whatsapp-content a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-content a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries pagina responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-1 {
+        width: 200%;
+        max-width: 600px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        /* Ajusta habilidades */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+
+    .contact-form button {
+        width: 90%;
+    }
+    .image-content {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image-content img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #33ffe3;
+        box-shadow: 0 0 50px rgba(0, 234, 255, 0.6);
+    }
+    .text-content h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #33ffe3;
+    }
+    
+    .text-content h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #33ffe3;
+        margin-bottom: 10px;
+    }
+    
+    .text-content p {
+        font-size: 1rem;
+        color: #aaa;
+        max-width: 500px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    .whatsapp-button img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Estilos para la barra de navegación */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    background-color: #33ffe3;
+    color: #030303;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.name {
+    color: #33ffe3;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #33ffe3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #33ffe3;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #33ffe3;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: #33ffe3;
+}
+
+/* Efecto de scroll en la navbar */
+header.scrolled {
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Media Queries para responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}

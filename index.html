@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Catalina</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <span class="logo">CA</span>
+                <span class="name">Catalina Agudelo</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#cata">Inicio</a></li>
+                <li class="nav-item"><a href="#about">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a href="#resume">CV</a></li>
+                <li class="nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="cata">
+        <div class="container-img">
+            <div class="text-content">
+                <h1>Hello, It's <span class="highlight">Catalina</span></h1>
+                <h2>Soy <span class="highlight">estudiante de desarrolo de software.</span></h2>
+                <p>Bienvenidos! si tienes alguna duda contactanos.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="buttons">
+                    <button class="hire">contractarnos</button>
+                    <button class="contact">Contacto</button>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="./img/img-1.jpeg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección: Mi Perfil -->
+    <section id="about" class="about-container">
+        <h2>Sobre Mí</h2>
+        <p>
+            Soy desarrolladora web con sólida experiencia en tecnologías como <strong>HTML, CSS y JavaScript</strong>,
+            complementada por mi dominio en frameworks modernos como <strong>React</strong> y <strong>Node.js</strong>.
+            Me especializo en diseñar soluciones eficientes y atractivas, y tengo una pasión por resolver problemas 
+            técnicos complejos, asegurando siempre la implementación de ideas innovadoras y funcionales.
+        </p>
+    </section>
+    
+
+    <!-- Sección: Habilidades -->
+    <section id="skills" class="skills-container">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="./img/html-5.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/css-3.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/react-1.svg" alt="React">
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/nodejs.png" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/mysql.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            
+            <div class="skill-card">
+                <img src="./img/postgre.png" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <img src="./img/CockroachDB.png" alt="CockroachDB">
+                <p>CockroachDB</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección: Proyectos -->
+    <section id="proyectos" class="proyectos-container">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>PROYECTO 1: Guardia Verde</h3>
+                <p>Página web para gestionar tareas diarias, desarrollada con HTML, CSS, Node.js y JavaScript.</p>
+                <a href="https://github.com/camila2601/guardiaverde.git" target="_blank">Ver en GitHub</a>
+            </div>
+            
+            <div class="project">
+                <h3>PROYECTO 2: Gestión de productos de Tienda de ropa</h3>
+                <p>Solución integral para gestionar productos y ventas con una interfaz amigable y funcional.</p>
+                <a href="git@github.com:catalina05877/api-shop.git" target="_blank">Ver en GitHub</a>
+                <a href="https://github.com/catalina05877/tienda-ropa-app.git" target="_blank"> html del api-shop</a>
+            </div>
+        
+            <div class="project">
+                <h3>PROYECTO 3: Login Form</h3>
+                <p>Formulario interactivo con validación de inicio de sesión, integrado al backend.</p>
+                <a href="#">Ver en GitHub</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Sección: Descargar CV -->
+    <section id="resume" class="cv-container">
+        <h2>Descargar Mi CV</h2>
+        <a href="Hoja.pdf" download class="cv-button">Descargar Hoja de Vida</a>
+    </section>
+    
+
+    <!-- Sección: Contacto -->
+    <div id="contact" class="contact-form">
+        <h1>CONTACTANOS! <span></span></h1>
+        <form id="contact-form">
+            <input type="text" id="nombre" placeholder="Nombre Completo">
+            <input type="email" id="email" placeholder="Correo Electrónico">
+            <input type="tel" id="telefono" placeholder="Teléfono">
+            <input type="text" id="asunto" placeholder="Asunto">
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>        
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-container">
+        <div class="whatsapp-button" id="whatsappButton">
+            <img src="./img/whatsapp-1.png" alt="WhatsApp">
+        </div>
+        <div class="whatsapp-content" id="whatsappContent">
+            <p>📞 Teléfono: +57 3007202478</p>
+            <p>🕒 Horario: 8:00 AM - 6:00 PM</p>
+            <p><a href="https://wa.me/573007202478" target="_blank">Chat de WhatsApp</a></p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Catalina - Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1CHpQTX5re/" target="_blank" title="Facebook">
+                <img src="./img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/catalinaagudelogomez?igsh=MWR3OGFiZ2N0MzZiMQ==" target="_blank"
+                title="Instagram">
+                <img src="./img/instagraam.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/tu-perfil" target="_blank" title="Twitter">
+                <img src="./img/twitter.png" alt="Twitter">
+            </a>
+
+        </div>
+    </footer>
+
+    <script src="./scrip.js" defer></script>
+</body>
+
+</html>
